@@ -1,0 +1,8 @@
+package br.com.cognizant.spring.dao.impl;
+
+import br.com.cognizant.spring.dao.ProjetoDAO;
+import br.com.cognizant.spring.model.Projeto;
+
+public class ProjetoDAOImpl extends GenericDAOImpl<Projeto, Integer> implements ProjetoDAO{
+
+}

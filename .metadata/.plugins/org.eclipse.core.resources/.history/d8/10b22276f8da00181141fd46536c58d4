@@ -1,0 +1,7 @@
+package br.com.cognizant.spring.dao;
+
+import br.com.cognizant.spring.model.Projeto;
+
+public interface ProjetDAO extends GenericDAO<Projeto, Integer>{
+
+}

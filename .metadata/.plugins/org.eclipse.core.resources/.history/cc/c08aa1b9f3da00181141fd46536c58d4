@@ -1,0 +1,14 @@
+package br.com.cognizant.spring.model;
+
+import java.util.Calendar;
+import java.util.List;
+
+public class Projeto {
+
+	private int codigo;
+	private String nome;
+	private String descricao;
+	private Calendar dataInicio;
+	private Calendar dataTermino;
+	private List<Equipe> equipes;
+}

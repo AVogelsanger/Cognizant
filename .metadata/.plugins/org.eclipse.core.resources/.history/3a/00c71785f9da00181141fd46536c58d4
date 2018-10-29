@@ -1,0 +1,8 @@
+package br.com.cognizant.spring.dao.impl;
+
+import br.com.cognizant.spring.dao.EquipeDAO;
+import br.com.cognizant.spring.model.Equipe;
+
+public class EquipeDAOImpl extends GenericDAOImpl<Equipe, Integer> implements EquipeDAO{
+
+}

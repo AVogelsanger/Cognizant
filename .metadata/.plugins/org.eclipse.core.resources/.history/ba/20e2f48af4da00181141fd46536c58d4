@@ -1,0 +1,25 @@
+package br.com.cognizant.spring.model;
+
+import java.util.Calendar;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+@Entity
+@SequenceGenerator(name="projeto", allocationSize=1)
+public class Projeto {
+
+	@Id
+	@GeneratedValue(generator="projeto", strategy=GenerationType.SEQUENCE)
+	private int codigo;
+	
+	private String nome;
+	private String descricao;
+	private Calendar dataInicio;
+	private Calendar dataTermino;
+	private List<Equipe> equipes;
+}
