@@ -19,6 +19,23 @@
 			<form:input path="nome" cssClass="form-control"/>
 			<form:errors  path="nome"/>	
 		</div>
+		<div class="form-group">
+			<form:label path="dataInicio">DataInicio</form:label>
+			<form:input path="dataInicio" cssClass="form-control"/>
+			<form:errors  path="dataInicio"/>	
+		</div>
+		<div class="form-group">
+			<form:label path="dataTermino">DataTermino</form:label>
+			<form:input path="dataTermino" cssClass="form-control"/>
+			<form:errors  path="dataTermino"/>	
+		</div>
+		<div class="form-group">
+			<form:label path="equipe">Equipes</form:label>
+			<form:select path="equipe.codigo" cssClass="form-control">
+				<form:option value="0">Selecione</form:option>
+				<form:options items="${equipes }" itemLabel="nome" itemValue="codigo"/>
+			</form:select>
+		</div>		
 		<input type="submit" value="cadastrar" class="btn btn-primary"/>
 	
 	</form:form> 

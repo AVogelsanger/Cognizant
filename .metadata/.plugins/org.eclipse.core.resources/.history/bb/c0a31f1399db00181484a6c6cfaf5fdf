@@ -1,0 +1,5 @@
+package br.com.cognizant.spring.controller;
+
+public class EquipeController {
+
+}
